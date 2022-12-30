@@ -9,6 +9,7 @@ const auth = async (req, res, next) => {
         if (!user) {
     throw new Error()
 }
+       //user and token
         req.user = user
         req.token = token
         next()
