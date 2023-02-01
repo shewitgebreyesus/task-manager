@@ -14,11 +14,6 @@ const userSchema = new mongoose.Schema({
         required: true,
         trim: true,
         minlength: 7,
-        // validate(value) {
-        //     if ( value.tolowercase().includes('password')) {
-        //         throw new Error('password must not be password')
-        //     }
-        // }
 
     },
     email: {
