@@ -54,7 +54,7 @@ userSchema.methods.toJSON = function () {
     return userObject
 }
     
-userSchema.methods.generateAuthToken = async function () {
+
     const user = this
     const token = jwt.sign({_id: user._id.toString()},'this is my new course')
 
@@ -64,7 +64,7 @@ userSchema.methods.generateAuthToken = async function () {
 return token
 
 
-}
+
 
 
 userSchema.statics.findByCredentials = async (email, password) => {
