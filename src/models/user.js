@@ -55,7 +55,7 @@ userSchema.methods.toJSON = function () {
 }
     
 
-    const user = this
+   
     const token = jwt.sign({_id: user._id.toString()},'this is my new course')
 
     user.tokens = user.tokens.concat({ token })
