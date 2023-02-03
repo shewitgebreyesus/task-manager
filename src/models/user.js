@@ -59,8 +59,7 @@ userSchema.methods.toJSON = function () {
    
 
    
-    await user.save()
-
+   
 
 
 
