@@ -61,7 +61,7 @@ userSchema.methods.toJSON = function () {
     user.tokens = user.tokens.concat({ token })
     await user.save()
 
-return token
+
 
 
 
