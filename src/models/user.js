@@ -71,16 +71,25 @@ userSchema.methods.toJSON = function () {
 
     return userObject
 }
+<<<<<<< HEAD
 
 userSchema.methods.generateAuthToken = async function () {
     const user = this
     const token = jwt.sign({ _id: user._id.toString() }, process.env.JWT_SECRET)
+=======
+    
+>>>>>>> abd8c3260cf2edc5488d39e1cd5e3520efc1305a
 
-    user.tokens = user.tokens.concat({ token })
-    await user.save()
+   
+   
 
+<<<<<<< HEAD
     return token
 }
+=======
+   
+   
+>>>>>>> abd8c3260cf2edc5488d39e1cd5e3520efc1305a
 
 userSchema.statics.findByCredentials = async (email, password) => {
     const user = await User.findOne({ email })
@@ -117,5 +126,9 @@ userSchema.pre('remove', async function (next) {
 })
 
 const User = mongoose.model('User', userSchema)
+<<<<<<< HEAD
 
 module.exports = User
+=======
+module.exports = User
+>>>>>>> abd8c3260cf2edc5488d39e1cd5e3520efc1305a
