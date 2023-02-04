@@ -8,7 +8,7 @@
     "start": "nodemon scr/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "shewit",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
